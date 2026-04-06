@@ -19,6 +19,39 @@ It exists to prove that **true third path independence** is possible through rad
 - **Public audit trail**: All actions are logged and verifiable by anyone.
 - **GPLv3.0 licensed**: Full open source with ethical constraints.
 
+### Structure 
+``` pgsql 
+AIC-TransparencyDashboard/
+├── README.md                          # Trang chính + mục đích minh bạch
+├── LICENSE                            # GPLv3.0
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── GOVERNANCE.md
+├── POLICIES/
+│   ├── TRANSPARENCY-POLICY.md         # Chính sách minh bạch
+│   ├── ETHICAL-METRICS.md             # Metrics đạo đức
+│   └── ZERO-DONATION-POLICY.md
+├── src/                               # Code chính (dashboard)
+│   ├── backend/                       # API + audit log
+│   ├── frontend/                      # UI (React/Vue hoặc TUI)
+│   ├── core/                          # Transparency Engine
+│   └── metrics/                       # Ethical & governance metrics
+├── tests/                             # Tests
+├── scripts/                           # Deployment & audit scripts
+├── docs/
+│   ├── architecture.md
+│   └── user-guide.md
+├── public/                            # Static files (nếu có frontend)
+├── data/                              # Public audit logs (sample)
+├── examples/                          # Demo dashboard
+├── ANNOUNCEMENTS/
+│   └── YYYY-MM-Status.md
+├── HISTORY/
+│   └── CHANGELOG.md
+└── CONTACT.md
+``` 
+
 ### Key Features (in development)
 - Live governance dashboard
 - Ethical compliance metrics
